@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tejvid AI – Legal</title>
+<title>Tejvid – Legal</title>
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 <script>
 /* ==========================================================================================================================
-   THE ONLY PLACE TO EDIT.  Fill `email` (the page shows a yellow reminder until you do).  Change `updated` / `version` when the text changes.
+   THE ONLY PLACE TO EDIT.  Fill `email` (the page shows a yellow reminder until you do).  Change `updated` / `version` when the text changes. `operator` = the name users see (must match your Play Console developer name).
    One page, five tabs.  Link to a tab by adding its name after the address:
      …/index.html#privacy   …#terms   …#subscription   …#permissions   …#contact        (#delete and #about also work)
    ========================================================================================================================== */
 var LEGAL = {
-  app: 'Tejvid AI',
-  operator: 'Niteen Maurya',
+  app: 'Tejvid',
+  operator: 'Thropix',
   country: 'India',
-  email: '',
+  email: 'help.thropix@gmail.com',
   updated: '6 November 2026',
-  version: '2026-11-06'
+  version: '2026-11-06.7'
 };
 </script>
 <style>
@@ -69,7 +69,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 32px;color:var(--faint);font
 <body>
 
 <header>
-  <div class="brand"><div class="logo">T</div><div><h1 data-app>Tejvid AI</h1><p>Privacy · Terms · Subscription · Permissions · Contact</p></div></div>
+  <div class="brand"><div class="logo">T</div><div><h1 data-app>Tejvid</h1><p>Privacy · Terms · Subscription · Permissions · Contact</p></div></div>
 </header>
 
 <nav aria-label="Legal pages"><div class="in" role="tablist" id="tabs">
@@ -82,215 +82,137 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 32px;color:var(--faint);font
 
 <main>
 
-<!-- ===================================================================== PRIVACY -->
+<!-- ============================================================ PRIVACY -->
 <section class="panel" id="p-privacy" data-title="Privacy Policy">
   <h2>Privacy Policy</h2>
-  <p class="meta">Last updated <span data-updated></span> · Version <span data-version></span></p>
+  <p class="meta">Last updated <span data-updated></span></p>
+  <p>Your videos, photos, music and projects stay on your phone. This page says what else <span data-app></span> collects.</p>
 
-  <div class="box key">
-    <p><strong>In short</strong></p>
-    <ul>
-      <li>Your videos, photos, music and project files <strong>stay on your phone</strong>. They are not uploaded to us and are not sent to the AI.</li>
-      <li>When you use AI, the <strong>text</strong> you type (and a short description of your project, such as layer names and text) goes to our server and then to Google’s Gemini service to get the answer.</li>
-      <li>We keep your account, your plan and a usage log. You can <strong>delete your account inside the app</strong> (Settings → Delete account).</li>
-      <li>We do not sell your personal data.</li>
-    </ul>
-  </div>
-
-  <p><span data-app></span> (“the app”, “we”, “us”) is operated by <strong data-operator></strong>, <span data-country></span>. This policy explains what the app collects, why, who sees it and what you can do about it.</p>
-
-  <h3>1. What we collect</h3>
-  <p><strong>Account.</strong> If you sign in with Google (through Firebase Authentication) we receive your name, email address, profile picture link and a unique user ID. Features that use our server (AI, plans, publishing templates, export counting) need you to be signed in.</p>
-  <p><strong>Plan and payment records.</strong> Your plan, billing period, status, the date it is paid until, the Google Play order ID and the Google Play purchase token. Payment itself is handled by Google Play: we never see your card or bank details.</p>
-  <p><strong>AI usage log.</strong> For every AI request: the date, which feature, the model, the number of tokens and the credits used. Your remaining credits and per-day request counters. This lets you see what each AI use cost.</p>
-  <p><strong>What you send to the AI.</strong> The text you type in AI chat, your edit instructions, the text of an AI voice-over script, and a short description of the project needed to make the edit (for example layer names, text, timing). Your actual video, photo and audio files are <strong>not</strong> sent. If you use the microphone to speak a command, the speech is converted to text by Android’s speech-recognition service on your phone (provided by Google or your phone maker); only the resulting text is sent to us.</p>
-  <p><strong>Export counting.</strong> When you export, the app tells our server the video’s resolution and length so the plan limits can be applied. The video itself is never sent.</p>
-  <p><strong>Templates you publish.</strong> If you publish a template: its cover picture, its layout / text / settings and your display name. Published templates are visible to other users of the app until you delete them or delete your account. If you report a template, we store your user ID, the template and your reason.</p>
-  <p><strong>Reports you choose to send.</strong> “Report AI content” sends the AI answer, your prompt (first 500 characters) and your reason; we keep it for 90 days. Error reports (error message, technical stack trace, app version, Android version and your user ID) are kept for 30 days.</p>
-  <p><strong>Advertising (Free plan).</strong> The Free plan shows ads from Google AdMob. Google may collect your advertising ID, IP address and device and usage information to serve and measure ads, under Google’s own policies. We do not receive your personal data from AdMob. Paid plans show no ads.</p>
-  <p><strong>On your phone only.</strong> Your projects, drafts, settings, theme choice and the saved list of templates are stored on the device.</p>
-
-  <h3>2. Why we use it</h3>
+  <h3>What we collect</h3>
   <ul>
-    <li>to sign you in, run the AI features and apply your plan and limits;</li>
-    <li>to process subscriptions, restore purchases and keep records the law requires;</li>
-    <li>to keep the service safe: limits per day, preventing a purchase being reused, handling reports;</li>
-    <li>to find and fix crashes;</li>
-    <li>to show ads on the Free plan.</li>
+    <li><strong>Account</strong> (only if you sign in with Google): name, email, profile picture and user ID. The editor works without signing in.</li>
+    <li><strong>Plan and payments:</strong> your plan, paid-until date, Google Play order ID and purchase token. Google Play handles the payment; we never see your card details.</li>
+    <li><strong>AI use:</strong> the text you type and a short description of your project (layer names, text, timing) are sent to our server and to Google’s AI service. We log the date, tokens and credits used. Your video, photo and audio files are never sent.</li>
+    <li><strong>Voice commands:</strong> Android’s speech service on your phone turns your voice into text. We only get the text.</li>
+    <li><strong>Exports:</strong> only the video’s resolution and length, to apply plan limits.</li>
+    <li><strong>Templates you publish:</strong> cover picture, layout, text and settings, and your name. Your own photos and videos are replaced by placeholders. Other users can see them until you delete them.</li>
+    <li><strong>“Report AI content”:</strong> the AI answer, your prompt and your reason. Kept 90 days.</li>
+    <li><strong>Ads (Free plan):</strong> Google’s ad service may use your advertising ID, IP address and device information.</li>
+    <li><strong>Downloads:</strong> fonts come from Google and the auto-caption speech model from a public host. They see your IP address only.</li>
   </ul>
-  <p>We do not use your content to train AI models, and we do not sell personal data.</p>
 
-  <h3>3. Who we share it with</h3>
-  <div class="wide"><table>
-    <tr><th>Service</th><th>What for</th><th>What it receives</th></tr>
-    <tr><td>Google Firebase (Authentication, Firestore, Storage, Cloud Functions)</td><td>Sign-in, our database and server</td><td>Account, plan, usage log, published templates, reports</td></tr>
-    <tr><td>Google Gemini API</td><td>AI edits, scenes and voice-over</td><td>The text and project description you send to the AI</td></tr>
-    <tr><td>Google Play (Billing)</td><td>Payments and subscriptions</td><td>Your Google account purchase data (handled by Google)</td></tr>
-    <tr><td>Google AdMob</td><td>Ads on the Free plan</td><td>Advertising ID, device and usage data (handled by Google)</td></tr>
-  </table></div>
-  <p>Google processes data under its own terms and privacy policy (<a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>; <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Gemini API terms</a>). We also disclose information if the law requires it, or to protect our users and the service. We have no other third-party recipients.</p>
+  <h3>How we use it</h3>
+  <p>To sign you in, run AI, apply your plan, process subscriptions, keep the service safe and show ads on the Free plan. We do not sell your data and do not use your content to train AI.</p>
 
-  <h3>4. Where it is processed</h3>
-  <p>Google’s servers can be in countries other than yours, including outside India. By using the app you understand your data can be processed there.</p>
+  <h3>Who receives it</h3>
+  <p>Only the services that run the app for you: Google (sign-in, our server, AI, payments, ads, fonts) and a public host for the speech model. They follow their own privacy policies, for example <a href="https://policies.google.com/privacy" rel="noopener">Google’s</a>. We also share data if the law requires it. Nobody else.</p>
 
-  <h3>5. How long we keep it</h3>
-  <div class="wide"><table>
-    <tr><th>Data</th><th>Kept</th></tr>
-    <tr><td>Account, plan, credits and AI usage log</td><td>Until you delete your account</td></tr>
-    <tr><td>Published templates</td><td>Until you delete them or your account</td></tr>
-    <tr><td>Billing record (plan, order ID, paid-until date — no name, no email)</td><td>Kept after account deletion, as tax and dispute law requires. Google keeps the actual invoices.</td></tr>
-    <tr><td>Error reports</td><td>30 days</td></tr>
-    <tr><td>“Report AI content” reports</td><td>90 days</td></tr>
-    <tr><td>Daily request counters</td><td>Expire automatically</td></tr>
-  </table></div>
+  <h3>How long we keep it</h3>
+  <p>Account, plan and AI log: until you delete your account. Published templates: until you delete them. A small billing record (user ID, plan, order ID, paid-until date, purchase token; no name or email) is kept after deletion for tax and dispute needs. AI reports: 90 days. Request counters and export records: up to 35 days.</p>
 
-  <h3 id="delete">6. Delete your data</h3>
-  <div class="box">
-    <p><strong>In the app:</strong> Settings → <strong>Delete account</strong>. This deletes your account, published templates, plan record and AI usage log. If you have an active subscription, cancel it first in Google Play (Play Store → Payments &amp; subscriptions → Subscriptions); the app will tell you if this is needed.</p>
-    <p><strong>Cannot open the app?</strong> Email <span data-email></span> from the address you signed in with, with the subject “Delete my data”. We reply within 30 days.</p>
-    <p>Projects on your phone are not touched by account deletion; uninstalling the app removes them.</p>
-  </div>
+  <h3 id="delete">Delete your account</h3>
+  <p>In the app: <strong>Settings → Delete account</strong>. It deletes your account, plan, AI log and published templates at once. If you have a subscription, cancel it first in Google Play (the app will remind you); deleting the account does not cancel it.</p>
+  <p>Cannot open the app? Email <span data-email></span> from your sign-in address with the subject “Delete my account”. We delete it within 30 days.</p>
 
-  <h3>7. Your rights</h3>
-  <p>You can ask us to give you a copy of your data, correct it, delete it, or stop using it for a purpose you agreed to earlier. You can reset or switch off your advertising ID in Android settings and take back any permission at any time. Under India’s Digital Personal Data Protection Act, 2023 you may also nominate someone to act for you and make a complaint to us; contact details are on the <a href="#contact">Contact</a> tab. If we do not resolve it you may approach the Data Protection Board of India.</p>
+  <h3>Your rights</h3>
+  <p>You can ask for a copy of your data, a correction or deletion, or withdraw consent, by emailing <span data-email></span>. If we do not solve it, you can also complain to your local data protection authority. You can reset your advertising ID and remove any permission in Android settings.</p>
 
-  <h3>8. Children</h3>
-  <p>The app is not for children under 13 and we do not knowingly collect their data; if we find it we delete it. If you are under 18, please use the app with the permission of a parent or guardian.</p>
+  <h3>Children</h3>
+  <p>The app is not for children under 13. Under 18, use it with a parent’s or guardian’s permission.</p>
 
-  <h3>9. Security</h3>
-  <p>Connections to our server use HTTPS and access to data is limited by Firebase security rules and your sign-in. No system is 100% secure, so we cannot promise absolute security.</p>
-
-  <h3>10. Changes</h3>
-  <p>If we change this policy we will update the date and version above, and tell you in the app if the change is important.</p>
+  <h3>Changes</h3>
+  <p>We can change this policy at any time. The date above shows the latest version, and for important changes we tell you in the app.</p>
 </section>
 
-<!-- ===================================================================== TERMS -->
+<!-- ============================================================ TERMS -->
 <section class="panel" id="p-terms" data-title="Terms of Use">
   <h2>Terms of Use</h2>
-  <p class="meta">Last updated <span data-updated></span> · Version <span data-version></span></p>
-  <p>These terms are an agreement between you and <strong data-operator></strong> for the use of <span data-app></span>. By signing in, subscribing or using the app you accept them. If you do not agree, please do not use the app.</p>
+  <p class="meta">Last updated <span data-updated></span></p>
+  <p>By using <span data-app></span> you agree to these terms.</p>
 
-  <h3>1. Who can use it</h3>
-  <p>You must be at least 13. If you are under 18 you need the permission of a parent or guardian. You are responsible for your account and for everything done through it.</p>
-
-  <h3>2. Your content</h3>
-  <p>You keep the ownership of your videos, photos, music, text and projects. You promise that you have the rights to use them and that they do not break the law or anyone’s rights (copyright, privacy, publicity). Music, fonts or pictures you import are your responsibility.</p>
-  <p>If you publish a template, you allow us and other users of the app to see, open and use it in the app. You can remove it at any time.</p>
-
-  <h3>3. What you must not do</h3>
+  <h3>Using the app</h3>
   <ul>
-    <li>make or share content that is illegal, hateful, harassing, or sexual content involving minors;</li>
-    <li>use the AI to deceive people, such as faking a real person’s voice or likeness without their permission;</li>
-    <li>upload or publish content you do not have the right to use;</li>
-    <li>try to break, overload, copy or reverse-engineer the app or server, avoid plan limits, or reuse a purchase;</li>
-    <li>use the app in a way that harms other users.</li>
+    <li>You must be 13 or older. Under 18, you need a parent’s or guardian’s permission.</li>
+    <li>You are responsible for your account.</li>
+    <li>You keep ownership of your content and promise you have the right to use it (copyright, music, fonts, pictures you import).</li>
+    <li>If you publish a template, other users may use it in the app. You can remove it any time.</li>
   </ul>
-  <p>We may remove content or limit or close an account that breaks these rules.</p>
 
-  <h3>4. AI features</h3>
-  <p>AI answers, scenes and voices are generated automatically and can be wrong, incomplete or similar to other content. Check the result before you use or publish it; you are responsible for how you use it. Use “Report AI content” in the app to tell us about harmful output. AI credits are a usage allowance, not money, and cannot be exchanged or transferred.</p>
+  <h3>Do not</h3>
+  <ul>
+    <li>make or share illegal, hateful or harassing content, or sexual content involving minors;</li>
+    <li>use AI to deceive people, for example faking a real person’s voice or face without permission;</li>
+    <li>break, overload, copy or reverse-engineer the app, avoid plan limits or reuse a purchase.</li>
+  </ul>
+  <p>We may remove content or close an account that breaks these rules.</p>
 
-  <h3>5. Free and paid plans</h3>
-  <p>The editor is free. AI features use credits. Paid plans, prices, renewal and cancellation are explained in the <a href="#subscription">Subscription</a> tab, which is part of these terms.</p>
+  <h3>AI</h3>
+  <p>AI results can be wrong. Check them before you use or publish them. Report harmful output with “Report AI content” in the app. Credits are a usage allowance, not money.</p>
 
-  <h3>6. Ads</h3>
-  <p>The Free plan shows ads. Please do not click ads by mistake or on purpose to create clicks. Paid plans show no ads.</p>
+  <h3>Plans and ads</h3>
+  <p>The editor is free. AI uses credits. See <a href="#subscription">Subscription</a> for plans and cancelling. The Free plan shows ads; please do not click them by mistake or on purpose.</p>
 
-  <h3>7. Our rights</h3>
-  <p>The app, its design, code and templates we provide belong to us or our licensors. You get a personal, non-exclusive, non-transferable right to use the app. We may change, pause or stop features, and we will try to give notice for big changes.</p>
+  <h3>Liability</h3>
+  <p>The app is provided “as is”. As far as the law allows, we are not liable for indirect damages or lost content, and our total liability is limited to what you paid us in the last 12 months.</p>
 
-  <h3>8. Ending</h3>
-  <p>You can stop at any time and delete your account in the app. We can suspend or end your access if you break these terms or the law.</p>
-
-  <h3>9. No promises, limited liability</h3>
-  <p>The app is provided “as is”. We try hard, but we do not promise it will always work without errors, or that AI results are correct. To the extent the law allows, we are not responsible for indirect or lost-profit damages, or for loss of content you did not back up. Our total responsibility for any claim is limited to what you paid us in the 12 months before it. Nothing here removes rights you have under law that cannot be removed.</p>
-
-  <h3>10. Law</h3>
-  <p>These terms follow the laws of India, and the courts of India have jurisdiction, unless your local consumer law says otherwise.</p>
-
-  <h3>11. Changes</h3>
-  <p>We may update these terms. The date and version above show the latest one. If you keep using the app after a change, you accept it.</p>
+  <h3>Law and changes</h3>
+  <p>We can change these terms, our plans, prices, limits and features at any time. The date above shows the latest version, and for important changes we tell you in the app. If you keep using the app after a change, you accept it. A price change never applies to a subscription you already paid for until it renews, and Google Play asks you before it does.</p>
+  <p>These terms are governed by the law of the country where we operate, but this never takes away rights your local consumer law gives you. You can stop any time and delete your account in the app.</p>
 </section>
 
-<!-- ===================================================================== SUBSCRIPTION -->
+<!-- ============================================================ SUBSCRIPTION -->
 <section class="panel" id="p-subscription" data-title="Subscription">
-  <h2>Subscription terms</h2>
-  <p class="meta">Last updated <span data-updated></span> · Version <span data-version></span></p>
+  <h2>Subscription</h2>
+  <p class="meta">Last updated <span data-updated></span></p>
+  <p>Paid plans renew automatically each month or year until you cancel in Google Play. You keep the plan until the end of the period you paid for.</p>
 
-  <div class="box key">
-    <p><strong>In short:</strong> paid plans renew automatically every month or year until you cancel in Google Play. You pay through Google Play, and you keep the plan until the end of the period you paid for.</p>
-  </div>
-
-  <h3>Plans</h3>
   <div class="wide"><table>
     <tr><th>Plan</th><th>Price (USD)</th><th>AI credits</th><th>Ads</th></tr>
-    <tr><td>Free</td><td>$0</td><td>50 credits once, to try AI chat (AI voice needs a paid plan)</td><td>Yes</td></tr>
+    <tr><td>Free</td><td>$0</td><td>—</td><td>Yes</td></tr>
     <tr><td>Starter</td><td>$4 / month · $40 / year</td><td>1,000 every month</td><td>No</td></tr>
     <tr><td>Pro</td><td>$10 / month · $100 / year</td><td>3,000 every month</td><td>No</td></tr>
     <tr><td>Max</td><td>$32 / month · $320 / year</td><td>10,000 every month</td><td>No</td></tr>
   </table></div>
-  <p>Every plan includes the full editor and unlimited exports up to 4K. Prices are shown in US dollars; Google Play shows the final price in your currency, including any taxes, before you buy, and it can differ by country.</p>
+  <p>All plans include the full editor and unlimited exports up to 4K. Google Play shows the final price in your currency, with taxes, before you buy.</p>
 
-  <h3>How credits work</h3>
-  <ul>
-    <li>One AI edit costs about 25 credits and one minute of AI voice about 18 credits. The app shows the exact credits each use took.</li>
-    <li>Credits refresh every month. Unused credits do not carry over to the next month.</li>
-    <li>If you run out, you can wait for next month or move to a bigger plan.</li>
-  </ul>
-
-  <h3>Billing and renewal</h3>
-  <ul>
-    <li>You are charged by Google Play to your Google account when you confirm the purchase.</li>
-    <li>The plan <strong>renews automatically</strong> for the same period and price unless you cancel at least 24 hours before the period ends (Google Play may show the exact time).</li>
-    <li>Google Play allows one active plan at a time and handles upgrades and downgrades; the new price and date are shown by Google Play.</li>
-    <li>If Google Play tells you the price will change, you can accept or cancel before it applies.</li>
-  </ul>
+  <h3>Credits</h3>
+  <p>One AI edit is about 25 credits; one minute of AI voice is about 18 credits (AI voice needs a paid plan). Credits reset every month and do not carry over.</p>
 
   <h3>Cancel</h3>
-  <p>Open Google Play → profile picture → <strong>Payments &amp; subscriptions → Subscriptions</strong> → <span data-app></span> → <strong>Cancel subscription</strong>. Your plan stays active until the end of the period you already paid for. Deleting the app or your account does <strong>not</strong> cancel a subscription: cancel it in Google Play first (the app will not delete an account with an active subscription).</p>
+  <p>Google Play → profile picture → <strong>Payments &amp; subscriptions → Subscriptions</strong> → <span data-app></span> → <strong>Cancel subscription</strong>. Cancel at least 24 hours before renewal. Deleting the app or your account does not cancel it.</p>
 
   <h3>Refunds</h3>
-  <p>Payments are made to Google Play, so refunds follow Google Play’s refund policy and are requested through Google Play. If you have a problem, write to us from the <a href="#contact">Contact</a> tab and we will help. We do not refund credits that were already used.</p>
+  <p>Refunds follow Google Play’s refund policy and are requested through Google Play. For a problem, email <span data-email></span>. Used credits are not refunded.</p>
 
-  <h3>Restore and changing phone</h3>
-  <p>Sign in with the same Google account and use <strong>Restore purchases</strong> on the Subscription screen of the app.</p>
+  <h3>New phone</h3>
+  <p>Sign in with the same Google account and tap <strong>Restore purchases</strong>.</p>
 
-  <h3>Changes</h3>
-  <p>We may change plans, prices or limits for new purchases and renewals; we will tell you in the app and Google Play before a price change applies to you.</p>
+  <p>We will tell you in the app and in Google Play before a price change applies to you.</p>
 </section>
 
-<!-- ===================================================================== PERMISSIONS -->
+<!-- ============================================================ PERMISSIONS -->
 <section class="panel" id="p-permissions" data-title="Permissions">
   <h2>Permissions</h2>
-  <p class="meta">Last updated <span data-updated></span> · Version <span data-version></span></p>
-  <p>The app asks only for what a feature needs, at the moment you use it. You can take any permission back in Android Settings → Apps → <span data-app></span> → Permissions; the rest of the app keeps working.</p>
+  <p class="meta">Last updated <span data-updated></span></p>
+  <p>The app asks only when a feature needs it. You can remove any permission in Android Settings → Apps → <span data-app></span>.</p>
   <div class="wide"><table>
     <tr><th>Permission</th><th>Why</th><th>If you say no</th></tr>
-    <tr><td>Microphone</td><td>Recording a voice-over and speaking a command to the AI. Audio is recorded on your phone only when you press record or the voice button.</td><td>Type the command; import an audio file instead</td></tr>
-    <tr><td>Photos, videos and music</td><td>Choosing clips for your project. The app reads only the files you pick (through Android’s picker).</td><td>You cannot add that media</td></tr>
-    <tr><td>Save to gallery</td><td>Putting your exported video in your gallery. On Android 10 and newer no storage permission is needed.</td><td>Export is saved inside the app only; you can still share it</td></tr>
-    <tr><td>Internet and network state</td><td>Sign-in, AI, plans, templates, ads, and knowing when you are offline.</td><td>The editor works offline; online features do not</td></tr>
+    <tr><td>Microphone</td><td>Voice-over recording and voice commands to the AI, only when you press record or the voice button.</td><td>Type the command or import an audio file</td></tr>
+    <tr><td>Videos (optional)</td><td>Opens the video you pick directly, which is faster. Photos and audio use Android’s picker and need no permission.</td><td>Everything works; the app copies the video first</td></tr>
+    <tr><td>Internet and network state</td><td>Sign-in, AI, plans, templates, ads and fonts.</td><td>The editor works offline</td></tr>
     <tr><td>Google Play Billing</td><td>Buying and restoring a subscription.</td><td>You cannot subscribe</td></tr>
-    <tr><td>Advertising ID</td><td>Used by Google AdMob for ads on the Free plan. Reset or delete it in Android Settings → Privacy → Ads.</td><td>Ads may be less relevant</td></tr>
+    <tr><td>Advertising ID</td><td>Used for ads on the Free plan. Reset it in Android Settings → Privacy → Ads.</td><td>Ads may be less relevant</td></tr>
   </table></div>
-  <p>The app does <strong>not</strong> use your camera, location, contacts, calendar, call log or SMS.</p>
 </section>
 
-<!-- ===================================================================== CONTACT -->
+<!-- ============================================================ CONTACT -->
 <section class="panel" id="p-contact" data-title="Contact">
-  <h2>About &amp; contact</h2>
-  <p class="meta">Last updated <span data-updated></span> · Version <span data-version></span></p>
-  <p><span data-app></span> is a video editor with an AI assistant, made by <strong data-operator></strong>, <span data-country></span>.</p>
+  <h2>Contact</h2>
+  <p class="meta">Last updated <span data-updated></span></p>
+  <p><span data-app></span> is made by <strong data-operator></strong>, <span data-country></span>.</p>
   <div class="box">
-    <p><strong>Support and privacy questions</strong><br><span data-email></span></p>
-    <p><strong>Grievance contact (India, DPDP Act)</strong><br><span data-operator></span> · <span data-email></span> · we reply within 30 days.</p>
+    <p><strong>Support, privacy and complaints</strong><br><span data-email></span><br>We reply within 30 days.</p>
   </div>
-  <h3>Common requests</h3>
-  <ul>
-    <li><strong>Delete my data:</strong> in the app Settings → Delete account, or email us with the subject “Delete my data”. See <a href="#delete">Delete your data</a>.</li>
-    <li><strong>Subscription problem:</strong> email us with your Google Play order ID (starts with “GPA.”).</li>
-    <li><strong>Harmful AI output or content:</strong> use “Report AI content” in the app, or email us.</li>
-  </ul>
   <div class="btnrow">
     <a class="btn" href="#privacy">Privacy Policy</a><a class="btn o" href="#terms">Terms of Use</a><a class="btn o" href="#subscription">Subscription</a>
   </div>
@@ -298,7 +220,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 32px;color:var(--faint);font
 
 </main>
 
-<footer>© <span id="yr"></span> <span data-operator></span>. All rights reserved. <span data-app></span> · version <span data-version></span></footer>
+<footer>© <span id="yr"></span> <span data-operator></span>. All rights reserved. <span data-app></span></footer>
 
 <script>
 (function () {
