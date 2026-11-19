@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coinvaar – Play. Complete. Win Rewards.</title>
+<meta name="description" content="Coinvaar is an India rewards app: watch videos, spin, scratch, take the daily quiz and complete offers to earn coins you can redeem.">
+<meta name="theme-color" content="#0b0f19">
+<style>
+  :root{
+    --bg:#ffffff; --card:#f8fafc; --line:#e2e8f0; --txt:#0f172a; --mut:#475569;
+    --gold:#d97706; --indigo:#4f46e5; --hero1:#4f46e5; --hero2:#8b5cf6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0b0f19; --card:#161f30; --line:#26334d; --txt:#f8fafc; --mut:#94a3b8; --gold:#f59e0b; --indigo:#818cf8; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:70px}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:var(--indigo)}
+  header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+  .bar{max-width:880px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .logo{font-weight:800;font-size:19px;margin-right:auto;text-decoration:none;color:var(--txt)}
+  .logo span{color:var(--gold)}
+  nav a{margin-left:14px;text-decoration:none;color:var(--mut);font-size:14px}
+  nav a:hover{color:var(--txt)}
+  .hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;text-align:center;padding:64px 20px}
+  .hero h1{margin:0 0 10px;font-size:clamp(28px,6vw,44px);line-height:1.15}
+  .hero p{margin:0 auto 22px;max-width:560px;opacity:.95}
+  .btn{display:inline-block;background:#fff;color:#3730a3;font-weight:700;padding:12px 22px;border-radius:12px;text-decoration:none}
+  main{max-width:880px;margin:0 auto;padding:8px 20px 56px}
+  section{padding-top:36px}
+  h2{font-size:24px;margin:0 0 10px}
+  h3{font-size:17px;margin:22px 0 6px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card b{display:block;margin-bottom:4px}
+  .mut{color:var(--mut)}
+  .note{border-left:4px solid var(--gold);background:var(--card);padding:10px 14px;border-radius:8px;margin:14px 0;font-size:14px}
+  ul,ol{padding-left:22px}
+  code{background:var(--card);border:1px solid var(--line);padding:1px 6px;border-radius:5px;font-size:.92em}
+  section:target h2{outline:2px solid var(--gold);outline-offset:6px;border-radius:6px}
+  footer{border-top:1px solid var(--line);text-align:center;padding:24px 20px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">🪙 Coin<span>vaar</span></a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="#delete">Delete account</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <h1>Play. Complete. Win Rewards.</h1>
+  <p>Watch videos, spin, scratch, take the Daily India Quiz and finish offers to earn coins. Redeem them for UPI cash, mobile recharge, Amazon Pay or Google Play codes.</p>
+  <!-- PLAY STORE LINK: replace after the app is live -->
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.coinvaar.app">Get it on Google Play</a>
+</div>
+
+<main>
+
+<section id="how">
+  <h2>How Coinvaar works</h2>
+  <div class="grid">
+    <div class="card"><b>1. Earn coins</b><span class="mut">Rewarded videos, daily check-in, Chai Time bonus, spin, scratch cards, quiz, offers and referrals.</span></div>
+    <div class="card"><b>2. Stay active</b><span class="mut">Bigger rewards unlock after a few active days. Completing an offer or survey unlocks them sooner.</span></div>
+    <div class="card"><b>3. Redeem</b><span class="mut">Pick a reward in the Wallet. We review each request by hand, usually within 24–48 hours.</span></div>
+  </div>
+  <p class="mut">100 coins = ₹1. Rates, limits and rewards can change. Coinvaar is for users aged 18 or older and is not affiliated with Google, Amazon or any brand shown as a reward.</p>
+</section>
+
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+  <div class="note"><b>Template.</b> Replace every [bracketed] item and have it reviewed by a lawyer before you publish the app.</div>
+  <p class="mut">Last updated: [DATE]. Operator: [YOUR NAME / COMPANY], [ADDRESS]. Contact: [EMAIL].</p>
+
+  <h3>1. Who can use Coinvaar</h3>
+  <p>Coinvaar is for users aged 18 or older.</p>
+
+  <h3>2. Data we collect</h3>
+  <ul>
+    <li><b>Google account info</b> (name, e-mail, profile photo) when you sign in with Google.</li>
+    <li><b>Device identifier</b> (Android ID), used only to allow one account per phone and to prevent fraud.</li>
+    <li><b>Activity data</b>: coins, daily task counters, referral code, redeem requests and the UPI ID / e-mail / mobile number you enter to receive a reward.</li>
+    <li><b>Advertising data</b>: Google AdMob (and other ad networks we switch on) may collect the advertising ID and device information to show and measure ads.</li>
+    <li><b>Offerwall / survey partners</b> (CPX Research and, if switched on, PubScale) receive only an anonymous user id, with no name and no e-mail, so they can credit your tasks. They may collect their own data under their own privacy policies.</li>
+    <li><b>Install referrer</b>: if you installed from a friend's link, Google Play tells the app the referral code in that link.</li>
+    <li><b>Games</b>: the "Play &amp; Earn" section shows third-party games from GamePix inside the app. GamePix and the game publishers may use cookies or identifiers.</li>
+  </ul>
+
+  <h3>3. How we use it</h3>
+  <p>To run the app, credit and pay rewards, prevent fraud and abuse, show ads and improve the service. We do not sell your personal data.</p>
+
+  <h3>4. Service providers</h3>
+  <p>Google Firebase (authentication, database, cloud functions, App Check / Play Integrity), Google AdMob, Unity Ads, Start.io, GamePix and the offerwall partners listed above. They process data under their own privacy policies. Where consent is required (for example the EEA and UK), Google's consent form is shown before ads.</p>
+
+  <h3>5. VPN / security checks</h3>
+  <p>The app checks locally whether a VPN is active. This check happens on your phone and is not uploaded. Google Play Integrity is used to confirm that requests come from the genuine app.</p>
+
+  <h3>6. Retention and deletion</h3>
+  <p>You can delete your account at any time (see <a href="#delete">Delete account</a>). Your profile and sign-in are removed. Payout records are kept without your e-mail or payment address for accounting, and an anonymous device-lock record (a one-way hash, no personal data) is kept to prevent abuse. The same phone can sign up again 7 days after deletion. Offer and admin log records are deleted automatically after 90 and 180 days.</p>
+
+  <h3>7. Security</h3>
+  <p>Coins can only be changed by our servers. Data is sent over HTTPS.</p>
+
+  <h3>8. Children</h3>
+  <p>Coinvaar is not directed to anyone under 18 and we do not knowingly collect their data.</p>
+
+  <h3>9. Changes</h3>
+  <p>We may update this policy. The date above will change when we do.</p>
+</section>
+
+<section id="terms">
+  <h2>Terms of Use</h2>
+  <div class="note"><b>Template.</b> Replace every [bracketed] item and have it reviewed by a lawyer before you publish the app.</div>
+  <ol>
+    <li><b>Eligibility.</b> You must be 18+ and may hold only one account (one account per phone).</li>
+    <li><b>Coins.</b> Coins have no cash value until redeemed. 100 coins = ₹1 at the time of redemption. Rates, limits and rewards can change.</li>
+    <li><b>Fair use.</b> No VPN, emulators, modified apps, multiple accounts, fake referrals or automated tools. We may withhold rewards, reverse coins and block accounts that break these rules.</li>
+    <li><b>Redemption unlock.</b> To redeem you need enough coins and a number of "active days" (days on which you earned coins; more for bigger rewards, fewer after you complete an offer or survey). There is a short waiting period between two redeem requests. The exact numbers are shown in the app and may change.</li>
+    <li><b>Referrals.</b> You and your friend get the referral bonus only after the friend has earned the required coins or completed a first offer. Fake or self-referrals void the bonus.</li>
+    <li><b>Redemptions.</b> Requests are reviewed manually, usually within 24–48 hours. Your code or payment reference appears in the app under Wallet &rarr; My Rewards. We may reject a request that looks fraudulent; rejected requests are refunded as coins. Wrong payment details entered by you cannot be recovered.</li>
+    <li><b>Ads and tasks.</b> Rewards for tasks and offers depend on advertisers confirming completion. Never click ads just to earn; rewards are for watching videos only.</li>
+    <li><b>No affiliation.</b> Coinvaar is not affiliated with Google, Amazon or any brand shown as a reward.</li>
+    <li><b>Liability.</b> The service is provided "as is". [Add limitation of liability and governing law / jurisdiction.]</li>
+    <li><b>Contact.</b> [EMAIL]</li>
+  </ol>
+</section>
+
+<section id="delete">
+  <h2>Delete your account</h2>
+  <p>You can delete your Coinvaar account and its data in two ways:</p>
+  <ol>
+    <li><b>In the app (recommended):</b> open <code>Wallet</code> &rarr; <code>Delete my account</code> and confirm.</li>
+    <li><b>By e-mail:</b> write to <b>[EMAIL]</b> from the Google account you used to sign in, with the subject "Delete my Coinvaar account". We will process it within [NUMBER] days.</li>
+  </ol>
+  <h3>What happens</h3>
+  <ul>
+    <li>Your profile, sign-in and coin balance are removed. Unredeemed coins are lost.</li>
+    <li>Payout records are kept without your e-mail or payment address, for accounting.</li>
+    <li>An anonymous one-way device hash is kept to prevent abuse. The same phone can sign up again after 7 days.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  © <span id="y">2026</span> Coinvaar · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a> · <a href="#delete">Delete account</a><br>
+  Contact: [EMAIL]
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
